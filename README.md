@@ -1,75 +1,232 @@
 # 👋 Hi, I’m Abraham (sonOfDocker)
 
-Full-stack software engineer with a strong Java foundation, modern JavaScript skills, and growing depth in Python and data pipelines.  
-I enjoy building **reliable, data-driven systems** that power **consumer-facing experiences**, with an emphasis on clarity, scale, and long-term maintainability.
+Senior Software Engineer focused on **distributed systems, data platforms, and AI-enabled applications**.
+
+My background is primarily **Java + Spring Boot backend engineering**, with additional experience building **full-stack platforms, data pipelines, and cloud infrastructure**. Recently I've been expanding into **AI system architecture and guardrails** to ensure modern AI systems are **reliable, safe, and production-ready**.
+
+I enjoy building systems where **data, APIs, and real-world user experiences intersect**.
 
 ---
 
-## 🧠 What I’m working on now
+# 🧠 What I’m building right now
 
-### 🚀 Pegasus Finance & Data Pipeline
-A privacy-first data ingestion and analysis system designed to turn messy, real-world inputs into clean, actionable insight.
+## 🛡️ AI Guardrails Portfolio Project
 
-**Why it matters:**  
-At its core, Pegasus is about **transforming raw data into trustworthy information** — the same challenge faced by large consumer platforms, media companies, and experience-driven products.
+A platform architecture project exploring **how to safely deploy AI systems and agents in production environments**.
 
-**Highlights:**
-- Python-based ingestion & normalization pipeline
-- Local-first architecture with Dockerized Postgres
-- Designed for:
-  - multi-user households
-  - extensibility across data domains (finance, commerce, usage metrics)
-  - future visualization & insight layers
+Modern AI applications introduce risks such as:
 
-🔗 Repo: https://github.com/sonOfDocker/pegasus_tracker
+- hallucinated outputs
+- prompt injection
+- unsafe or malicious inputs
+- unverified responses
+
+This project focuses on **building guardrail layers around LLM-driven systems**.
+
+### Core Concepts
+
+- input validation & prompt filtering  
+- hallucination detection  
+- response verification pipelines  
+- safe tool invocation  
+- agent runtime controls  
+- observability for AI decisions  
+
+🔗 Repo  
+https://github.com/sonOfDocker/ai-guardrails-portfolio
 
 ---
 
-## 🛠️ Tech I use
+## 🏆 World Cup Stats – Sports Data Platform
 
-**Backend**
-- Java (Spring / REST APIs)
-- Python (data ingestion, processing, analysis)
-- SQL (Postgres)
+A full-stack analytics platform built around historical **FIFA World Cup datasets**.
 
-**Frontend**
+The project explores how to design **clean APIs, data models, and analytics endpoints** around a real-world dataset used by fans, journalists, and analysts.
+
+### Architecture
+
+- Java **Spring Boot API**
+- Python **data ingestion pipeline**
+- Kaggle **historical World Cup dataset**
+- Dockerized local environment
+- REST endpoints powering future analytics dashboards
+
+### Goals
+
+- transform raw datasets into **normalized domain models**
+- build **analytics-focused APIs**
+- demonstrate **test-driven system design**
+- support future **sports analytics dashboards**
+
+🔗 Repo  
+https://github.com/sonOfDocker/worldcup-stats
+
+---
+
+## 🚀 Pegasus Finance & Data Pipeline
+
+A **privacy-first personal finance data platform** designed to transform messy real-world data (CSV statements, reports, exports) into structured insights.
+
+Pegasus focuses on **data ingestion, normalization, and analytics pipelines**.
+
+### Highlights
+
+- Python ingestion & transformation pipelines
+- Dockerized Postgres data store
+- schema design for evolving financial datasets
+- local-first architecture for privacy
+
+🔗 Repo  
+https://github.com/sonOfDocker/pegasus_tracker
+
+---
+
+# 🏗️ Featured Architecture Projects
+
+Below are simplified architecture views of the systems I'm currently building.
+
+These projects focus on **data pipelines, platform APIs, and responsible AI system design**.
+
+---
+
+## 🛡️ AI Guardrails Platform Architecture
+
+```mermaid
+flowchart LR
+    A[User / Application] --> B[API Gateway]
+    B --> C[Input Validation Layer]
+    C --> D[Prompt Security Filter]
+    D --> E[LLM Provider]
+    E --> F[Response Validation]
+    F --> G[Hallucination Detection]
+    G --> H[Policy Enforcement]
+    H --> I[Safe Response to User]
+
+    E --> J[Observability & Logging]
+    F --> J
+    G --> J
+    H --> J
+```
+
+### Design Focus
+
+- AI safety guardrails  
+- prompt injection protection  
+- hallucination mitigation  
+- response verification  
+- safe tool execution  
+- AI observability  
+
+Repo  
+https://github.com/sonOfDocker/ai-guardrails-portfolio
+
+---
+
+## 🏆 World Cup Stats – Data Platform
+
+```mermaid
+flowchart LR
+    A[Kaggle World Cup CSV Data] --> B[Python Ingestion Pipeline]
+    B --> C[Data Normalization]
+    C --> D[Postgres Database]
+    D --> E[Spring Boot API]
+    E --> F[REST Endpoints]
+    F --> G[Analytics Dashboard]
+    F --> H[Future ML / Statistical Models]
+```
+
+### Design Focus
+
+- converting raw datasets into domain models  
+- clean REST API design  
+- test-driven backend development  
+- analytics-ready architecture  
+
+Repo  
+https://github.com/sonOfDocker/worldcup-stats
+
+---
+
+## 🚀 Pegasus Finance Data Pipeline
+
+```mermaid
+flowchart LR
+    A[Bank CSVs / Statements] --> B[Python Parsing Pipeline]
+    B --> C[Data Cleaning]
+    C --> D[Normalization Layer]
+    D --> E[Postgres Storage]
+    E --> F[Analytics Queries]
+    F --> G[Budget Insights]
+    F --> H[Future Visualization Layer]
+```
+
+### Design Focus
+
+- messy real-world data ingestion  
+- schema evolution  
+- privacy-first architecture  
+- extensible data modeling  
+
+Repo  
+https://github.com/sonOfDocker/pegasus_tracker
+
+---
+
+# 🛠️ Technologies I Work With
+
+## Backend
+
+- **Java (Spring Boot)**
+- REST API design
+- distributed systems patterns
+- Python for ingestion & analytics
+
+## Frontend
+
 - JavaScript / TypeScript
-- React (UI foundations & dashboards)
-- Early exploration of mobile-first experiences
+- React
+- dashboard & analytics interfaces
 
-**Infrastructure & Reliability**
-- AWS (core services, deployment fundamentals)
+## Infrastructure
+
+- AWS
 - Docker & Docker Compose
-- Terraform (infrastructure as code mindset)
-- CI/CD fundamentals (GitHub Actions)
+- Terraform
+- GitHub Actions
 
-**Data & Insights**
-- Data modeling & normalization
-- Pipeline design for evolving schemas
-- Metrics, reporting, and exploratory analysis
+## Data Engineering
 
----
-
-## 🎯 Areas of interest
-
-- **Consumer-facing platforms & experiences**
-- **Data systems that support storytelling, media, and engagement**
-- **E-commerce & transactional data flows**
-- **Operational and behavioral analytics**
-- **Sports & entertainment analytics** (fan experience, performance trends)
-- Systems that balance **scale, reliability, and human impact**
+- data pipeline design
+- schema evolution
+- analytics-oriented modeling
+- CSV & structured dataset ingestion
 
 ---
 
-## 🧩 How I approach building software
+# 🎯 Areas of Interest
 
-- Design for **real users**, not just ideal inputs
-- Favor clear data models and explicit contracts
-- Build systems that are observable, testable, and evolvable
-- Think in terms of **journeys and experiences**, not just endpoints
-- Treat side projects with production-level discipline
+- AI platform architecture
+- AI guardrails & safe AI deployment
+- distributed systems
+- data pipelines & analytics platforms
+- sports analytics
+- consumer-facing platforms powered by data
 
 ---
 
-## 📫 Connect
-- GitHub: https://github.com/sonOfDocker
+# 🧩 Engineering Principles
+
+- design systems around **clear data models**
+- build **observable and testable platforms**
+- favor **explicit contracts over hidden assumptions**
+- use **test-driven development** to guide architecture
+- treat side projects with **production-level discipline**
+
+---
+
+# 📫 Connect
+
+GitHub  
+https://github.com/sonOfDocker
+
+
